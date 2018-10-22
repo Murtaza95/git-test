@@ -11,15 +11,16 @@ function Menu(props)
             title={item.name}
             subtitle={item.description}
             hideChevron={true}
-            leftavatar={{source: require('./images/uthappizza.png')}}
+            onPress={() =>props.onPress(item.Id)}
+            leftAvatar={{source: require('./images/uthappizza.png')}}
             />
         );
     }
     return(
         <FlatList
         data={props.dishes}
-        resderItem={renderMenuItem}
-        keyExtractor={item=>IDBCursor.toString}
+        renderItem={renderMenuItem}
+        keyExtractor={item => item.id.toString()}
         />
     );
 }
