@@ -5,6 +5,7 @@ import {DISHES} from '../shared/dishes';
 import {PROMOTIONS}from '../shared/promotions';
 import {LEADERS}from '../shared/leaders';
 
+
 function RenderItem(props)
 {
     const item=props.item;
@@ -45,6 +46,7 @@ class Home extends Component
     render(){
         return(
             <ScrollView>
+                
                 <RenderItem
                     item={this.state.dishes.filter((dish)=>dish.featured)[0]}
             />
@@ -56,6 +58,7 @@ class Home extends Component
             />
 
             </ScrollView>
+            
         );
     }
 }
