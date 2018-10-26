@@ -20,7 +20,7 @@ const renderLeader=({item,index})=>{
         
     );
 }
-function RenderHistory()
+function History()
 {
     return(
         <Card title="Our History">   
@@ -62,7 +62,7 @@ render(){
    
     return(
         <ScrollView>
-            <RenderHistory/>
+            <History/>
             <Card title="Carporate Leadership">
         <FlatList
             data={this.state.leaders}
