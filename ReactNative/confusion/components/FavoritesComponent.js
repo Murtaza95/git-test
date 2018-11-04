@@ -55,7 +55,9 @@ class Favorites extends Component {
             ];
             
             return (
-                <Swipeout right={rightButton} autoClose={true}> 
+                <Swipeout 
+                right={rightButton} autoClose={true}
+                > 
                     <ListItem
                         key={index}
                         title={item.name}

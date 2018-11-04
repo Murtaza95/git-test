@@ -1,4 +1,4 @@
-export const baseUrl = 'http://192.168.10.12:3000/'
+export const baseUrl = 'http://192.168.10.5:3000/'
 
 
 
