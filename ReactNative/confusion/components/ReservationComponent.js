@@ -22,9 +22,9 @@ class Reservation extends Component{
     toggleModal() {
         this.setState({showModal: !this.state.showModal});
     }
-    handleReservation() {
+   handleReservation() {
         console.log(JSON.stringify(this.state));
-        this.toggleModal();
+      this.toggleModal();
     }
     resetForm() {
         this.setState({
@@ -43,7 +43,7 @@ class Reservation extends Component{
                 <Picker
                 style={styles.formItem}
                 selectedValue={this.state.guests}
-                onValueChange={(itemValue,itemIndex)=> this.setState({guests: itemValue})}
+                onValueChange={(itemValue)=> this.setState({guests: itemValue})}
                 >
                 <Picker.Item label='1' value='1'/>
                 <Picker.Item label='2' value='2'/>
