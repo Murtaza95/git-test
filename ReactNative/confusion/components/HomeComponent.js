@@ -52,20 +52,14 @@ const mapStateToProps = state => {
 class Home extends Component
 {
 
-    constructor(props)
-    {
+    constructor(props) {
         super(props);
-        this.animatedValue=new Animated.Value(0);
-        this.state={
-            dishes:DISHES,
-            promotions:PROMOTIONS,
-            leaders:LEADERS
-        }
+        this.animatedValue = new Animated.Value(0);        
     }
     static navigationOptions={
         title: 'Home'
     };
-    componetDidMount(){
+    componentDidMount(){
         this.animate();
     }
     animate()
