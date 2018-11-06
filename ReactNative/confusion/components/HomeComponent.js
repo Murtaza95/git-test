@@ -95,13 +95,13 @@ class Home extends Component
                     erreMess={this.props.dishes.erreMess} 
                     />
                     </Animated.View>
-                    <Animated.View style={{ width: '100%', transform: [{translateX: xpos1}]}}>
+                    <Animated.View style={{ width: '100%', transform: [{translateX: xpos2}]}}>
                 <RenderItem item={this.props.promotions.promotions.filter((promo) => promo.featured)[0]}
                     isLoading={this.props.promotions.isLoading}
                     erreMess={this.props.promotions.erreMess} 
                     />
                      </Animated.View>
-                     <Animated.View style={{ width: '100%', transform: [{translateX: xpos1}]}}>
+                     <Animated.View style={{ width: '100%', transform: [{translateX: xpos3}]}}>
                 <RenderItem item={this.props.leaders.leaders.filter((leader) => leader.featured)[0]}
                     isLoading={this.props.leaders.isLoading}
                     erreMess={this.props.leaders.erreMess} 
