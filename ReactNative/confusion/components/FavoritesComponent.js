@@ -36,7 +36,7 @@ class Favorites extends Component {
                     onPress: () => {
                         Alert.alert(
                             'Delete Favorite?',
-                            'Are you sure you wish to delete the favorite dish ' + item.name + '?',
+                            'Are you sure you wish to delete the favorite dish ?',
                             [
                                 { 
                                     text: 'Cancel', 
