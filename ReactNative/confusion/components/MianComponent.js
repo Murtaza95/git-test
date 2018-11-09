@@ -313,7 +313,7 @@ Reservation:{
   
   
 }, {
-    initialRouteName:'Login',
+    initialRouteName:'Home',
     drawerBackgroundColor:'#D1E4C9',
     contentComponent:CustomDrawerContentComponent
 });
